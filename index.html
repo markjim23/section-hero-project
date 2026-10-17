@@ -3,20 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Nicepay | Smart Financial Management</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <!-- Main website container -->
     <main class="website-container" id="home">
 
         <!-- HEADER / NAVIGATION -->
         <header class="site-header">
             <nav class="navbar" aria-label="Main navigation">
-                <a href="#home" class="brand">
+
+                <!-- Brand logo -->
+                <a href="#home" class="brand" aria-label="Nicepay home">
+                    <span class="brand-icon" aria-hidden="true">
+                        <svg viewBox="0 0 40 40" fill="none">
+                            <rect x="3" y="3" width="14" height="14" rx="5" fill="currentColor"/>
+                            <rect x="23" y="3" width="14" height="14" rx="5" fill="currentColor"/>
+                            <rect x="3" y="23" width="14" height="14" rx="5" fill="currentColor"/>
+                            <rect x="23" y="23" width="14" height="14" rx="5" fill="currentColor"/>
+                        </svg>
+                    </span>
                     <span>Nicepay</span>
                 </a>
 
+                <!-- Navigation links -->
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#features">Features</a></li>
@@ -24,32 +45,49 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
 
+                <!-- Header call-to-action -->
                 <a href="#pricing" class="btn btn-primary nav-cta">Free Trial</a>
+
             </nav>
         </header>
 
         <!-- HERO SECTION -->
         <section class="hero-section" aria-labelledby="hero-title">
+
             <div class="eyebrow">
-                <span>Best Financial Management</span>
+                <span class="eyebrow-dot"></span>
+                Best Financial Management
             </div>
 
             <h1 id="hero-title">
                 Enhance your financial control
-                <br>
+                <br class="desktop-break">
                 with <span class="highlight-word">Nicepay</span>
             </h1>
 
             <p class="hero-description">
-                Streamline your business's financial management with our intuitive, scalable SaaS platform. Designed for startups, enterprises, and freelancers.
+                Streamline your business's financial management with our
+                intuitive, scalable SaaS platform. Designed for startups,
+                enterprises, and freelancers, we simplify complex processes.
             </p>
 
-            <!-- Hero Phone Mockup & Floating Cards -->
+            <div class="hero-tags" aria-hidden="true">
+                <span class="floating-tag tag-left">Nicepay</span>
+            </div>
+
             <div class="hero-visual">
+                <div class="glow glow-left"></div>
+                <div class="glow glow-right"></div>
+
                 <div class="phone-mockup">
                     <div class="phone-status">
                         <span>9:41</span>
                         <div class="phone-island"></div>
+                        <div class="phone-status-icons" aria-hidden="true">
+                            <span class="signal-icon">▮</span>
+                            <span class="wifi-icon">⌁</span>
+                            <span class="battery-icon"></span>
+                        </div>
                     </div>
 
                     <div class="phone-screen">
@@ -59,27 +97,200 @@
                         <div class="balance-card">
                             <span>Total balance</span>
                             <h3>$24,680.50</h3>
+                            <div class="balance-bottom">
+                                <span>+12.8% this month</span>
+                                <span>↗</span>
+                            </div>
+                        </div>
+
+                        <div class="chart-heading">
+                            <span>Overview</span>
+                            <span>This week⌄</span>
+                        </div>
+
+                        <div class="mini-chart" aria-hidden="true">
+                            <div class="chart-grid-line"></div>
+                            <div class="chart-grid-line"></div>
+                            <div class="chart-grid-line"></div>
+
+                            <svg viewBox="0 0 250 90" preserveAspectRatio="none">
+                                <defs>
+                                    <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#8b65f4" stop-opacity=".28"/>
+                                        <stop offset="100%" stop-color="#8b65f4" stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M0 72 C20 65, 27 40, 49 48 S78 63, 98 36 S133 53, 155 25 S191 44, 211 19 S233 28, 250 8 L250 90 L0 90 Z" fill="url(#chartFill)"/>
+                                <path d="M0 72 C20 65, 27 40, 49 48 S78 63, 98 36 S133 53, 155 25 S191 44, 211 19 S233 28, 250 8" fill="none" stroke="#8862ed" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+
+                        <div class="transaction-heading">
+                            <strong>Recent activity</strong>
+                            <span>See all</span>
                         </div>
 
                         <div class="transaction-row">
-                            <span>Client payment</span>
+                            <div class="transaction-icon income-icon">↙</div>
+                            <div class="transaction-info">
+                                <strong>Client payment</strong>
+                                <span>Today, 10:24 AM</span>
+                            </div>
                             <strong class="amount-positive">+$820</strong>
+                        </div>
+
+                        <div class="transaction-row">
+                            <div class="transaction-icon expense-icon">↗</div>
+                            <div class="transaction-info">
+                                <strong>Subscription</strong>
+                                <span>Yesterday</span>
+                            </div>
+                            <strong class="amount-negative">-$45</strong>
                         </div>
                     </div>
                 </div>
 
-                <!-- Floating Cards -->
                 <div class="floating-card history-card">
-                    <strong>History</strong>
-                    <span>Recent transactions</span>
+                    <div class="floating-card-heading">
+                        <span class="small-icon">◷</span>
+                        <div>
+                            <strong>History</strong>
+                            <span>Recent transactions</span>
+                        </div>
+                        <span class="more-icon">•••</span>
+                    </div>
+
+                    <div class="history-tabs">
+                        <span class="active-tab">Daily</span>
+                        <span>Weekly</span>
+                        <span>Yearly</span>
+                    </div>
+
+                    <div class="history-entry">
+                        <span class="bank-icon">↗</span>
+                        <div class="history-info">
+                            <strong>North Finance</strong>
+                            <small>August 12, 2026</small>
+                        </div>
+                        <strong class="positive-number">+$200</strong>
+                    </div>
+
+                    <div class="history-entry">
+                        <span class="bank-icon">↗</span>
+                        <div class="history-info">
+                            <strong>North Finance</strong>
+                            <small>August 11, 2026</small>
+                        </div>
+                        <strong class="negative-number">-$400</strong>
+                    </div>
                 </div>
 
                 <div class="floating-card income-card">
-                    <strong>Income</strong>
-                    <span>$2,999</span>
+                    <div class="income-heading">
+                        <span class="small-icon">$</span>
+                        <div>
+                            <strong>Income</strong>
+                            <span>Monthly overview</span>
+                        </div>
+                    </div>
+
+                    <div class="income-amount">
+                        <span>Monthly income</span>
+                        <strong>$2,999</strong>
+                    </div>
+
+                    <div class="income-progress">
+                        <div class="income-progress-fill"></div>
+                    </div>
+
+                    <div class="income-footer">
+                        <span>Monthly goal</span>
+                        <strong>80%</strong>
+                    </div>
+                </div>
+
+                <div class="phone-brand-tag">
+                    <span class="mini-brand-icon">✦</span>
+                    Nicepay
                 </div>
             </div>
         </section>
+
+        <!-- TRUSTED COMPANIES -->
+        <section class="trusted-section" aria-label="Trusted companies">
+            <p class="trusted-title">Trusted by 2k+ companies</p>
+            <div class="company-logos">
+                <div class="company-logo logo-muted"><span class="logo-symbol">✧</span> <strong>Logoipsum</strong></div>
+                <div class="company-logo"><span class="logo-symbol logo-circle">↗</span> <strong>Logoipsum</strong></div>
+                <div class="company-logo"><span class="logo-symbol logo-flower">✿</span> <strong>Logoipsum</strong></div>
+                <div class="company-logo"><span class="logo-symbol logo-stripes">≋</span> <strong>Logoipsum</strong></div>
+                <div class="company-logo logo-muted logo-last"><span class="logo-symbol">◉</span> <strong>Logoipsum</strong></div>
+            </div>
+        </section>
+
+        <!-- WORKFLOW / FEATURES -->
+        <section class="workflow-section" id="features" aria-labelledby="workflow-title">
+            <div class="eyebrow workflow-eyebrow">
+                <span class="eyebrow-dot"></span>
+                Our workflow
+            </div>
+
+            <h2 id="workflow-title">
+                How our platform makes your <br> workflow <span>easier</span>
+            </h2>
+
+            <div class="workflow-grid">
+                <article class="workflow-card">
+                    <div class="feature-icon">♙</div>
+                    <h3>Sign up and customize</h3>
+                    <p class="feature-description">
+                        Create your account in minutes and tailor the platform to meet your company's unique financial needs.
+                    </p>
+                    <div class="dashboard-widget users-widget">
+                        <div class="widget-heading">
+                            <span class="widget-icon">♙</span>
+                            <strong>Total Users</strong>
+                        </div>
+                        <div class="users-number">
+                            <strong>20K+</strong>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="workflow-card">
+                    <div class="feature-icon">▣</div>
+                    <h3>Link Your Accounts</h3>
+                    <p class="feature-description">
+                        Easily link your bank accounts, credit cards, loans, and investment accounts in one place.
+                    </p>
+                    <div class="dashboard-widget accounts-widget">
+                        <div class="integration-info">
+                            <span>Integrate with platforms over</span>
+                            <strong>20+</strong>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- PRICING SECTION -->
+        <section class="extra-section" id="pricing">
+            <div class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                Simple and flexible
+            </div>
+            <h2>Start managing your money smarter.</h2>
+            <a href="#contact" class="btn btn-primary">Get Started Free</a>
+        </section>
+
+        <!-- FOOTER / CONTACT -->
+        <footer class="site-footer" id="contact">
+            <a href="#home" class="brand footer-brand">
+                <span>Nicepay</span>
+            </a>
+            <p>Simplifying your financial journey.</p>
+            <span class="copyright">&copy; 2026 Nicepay. All rights reserved.</span>
+        </footer>
 
     </main>
 
