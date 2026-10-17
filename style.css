@@ -1,0 +1,122 @@
+/* =========================================
+   1. GLOBAL STYLES
+========================================= */
+
+:root {
+    --purple: #8660eb;
+    --purple-dark: #7049df;
+    --purple-light: #f0eaff;
+
+    --text-primary: #17171d;
+    --text-secondary: #797985;
+    --text-muted: #a1a1ad;
+
+    --page-background: #dcd4df;
+    --surface: #ffffff;
+    --surface-soft: #f5f6fb;
+
+    --border-color: #eeeeF4;
+
+    --radius-small: 12px;
+    --radius-medium: 20px;
+    --radius-large: 28px;
+
+    --shadow-soft: 0 12px 35px rgba(40, 28, 76, 0.08);
+    --shadow-card: 0 15px 45px rgba(40, 25, 80, 0.12);
+}
+
+/* Reset default browser spacing */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 30px;
+}
+
+body {
+    min-height: 100vh;
+    padding: 30px 16px;
+
+    background: var(--page-background);
+    color: var(--text-primary);
+
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.website-container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+
+    background: var(--surface);
+    overflow: hidden;
+}
+
+
+/* =========================================
+   2. BUTTONS
+========================================= */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 42px;
+    padding: 0 22px;
+
+    border: 0;
+    border-radius: 999px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    white-space: nowrap;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background: linear-gradient(
+        135deg,
+        #9a76ff,
+        var(--purple-dark)
+    );
+
+    box-shadow: 0 5px 14px rgba(134, 96, 235, 0.2);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(
+        135deg,
+        #8c64f4,
+        #6037d2
+    );
+
+    box-shadow: 0 8px 20px rgba(134, 96, 235, 0.3);
+    transform: translateY(-2px);
+}
