@@ -9,7 +9,10 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
@@ -20,7 +23,9 @@
     <!-- Main website container -->
     <main class="website-container" id="home">
 
-        <!-- HEADER / NAVIGATION -->
+        <!-- =========================
+             HEADER / NAVIGATION
+        ========================== -->
         <header class="site-header">
             <nav class="navbar" aria-label="Main navigation">
 
@@ -28,12 +33,17 @@
                 <a href="#home" class="brand" aria-label="Nicepay home">
                     <span class="brand-icon" aria-hidden="true">
                         <svg viewBox="0 0 40 40" fill="none">
-                            <rect x="3" y="3" width="14" height="14" rx="5" fill="currentColor"/>
-                            <rect x="23" y="3" width="14" height="14" rx="5" fill="currentColor"/>
-                            <rect x="3" y="23" width="14" height="14" rx="5" fill="currentColor"/>
-                            <rect x="23" y="23" width="14" height="14" rx="5" fill="currentColor"/>
+                            <rect x="3" y="3" width="14" height="14"
+                                rx="5" fill="currentColor"/>
+                            <rect x="23" y="3" width="14" height="14"
+                                rx="5" fill="currentColor"/>
+                            <rect x="3" y="23" width="14" height="14"
+                                rx="5" fill="currentColor"/>
+                            <rect x="23" y="23" width="14" height="14"
+                                rx="5" fill="currentColor"/>
                         </svg>
                     </span>
+
                     <span>Nicepay</span>
                 </a>
 
@@ -46,43 +56,60 @@
                 </ul>
 
                 <!-- Header call-to-action -->
-                <a href="#pricing" class="btn btn-primary nav-cta">Free Trial</a>
+                <a href="#pricing" class="btn btn-primary nav-cta">
+                    Free Trial
+                </a>
 
             </nav>
         </header>
 
-        <!-- HERO SECTION -->
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
         <section class="hero-section" aria-labelledby="hero-title">
 
+            <!-- Small label above the headline -->
             <div class="eyebrow">
                 <span class="eyebrow-dot"></span>
                 Best Financial Management
             </div>
 
+            <!-- Main headline -->
             <h1 id="hero-title">
                 Enhance your financial control
                 <br class="desktop-break">
                 with <span class="highlight-word">Nicepay</span>
             </h1>
 
+            <!-- Hero description -->
             <p class="hero-description">
                 Streamline your business's financial management with our
                 intuitive, scalable SaaS platform. Designed for startups,
                 enterprises, and freelancers, we simplify complex processes.
             </p>
 
+            <!-- Floating product tags -->
             <div class="hero-tags" aria-hidden="true">
                 <span class="floating-tag tag-left">Nicepay</span>
             </div>
 
+            <!-- Hero product illustration -->
             <div class="hero-visual">
+
+                <!-- Decorative background glows -->
                 <div class="glow glow-left"></div>
                 <div class="glow glow-right"></div>
 
+                <!-- Main phone mockup -->
                 <div class="phone-mockup">
+
+                    <!-- Phone status bar -->
                     <div class="phone-status">
                         <span>9:41</span>
+
                         <div class="phone-island"></div>
+
                         <div class="phone-status-icons" aria-hidden="true">
                             <span class="signal-icon">▮</span>
                             <span class="wifi-icon">⌁</span>
@@ -90,19 +117,24 @@
                         </div>
                     </div>
 
+                    <!-- Phone screen -->
                     <div class="phone-screen">
+
                         <p class="phone-greeting">Welcome back</p>
                         <h2>Your finances</h2>
 
+                        <!-- Main balance -->
                         <div class="balance-card">
                             <span>Total balance</span>
                             <h3>$24,680.50</h3>
+
                             <div class="balance-bottom">
                                 <span>+12.8% this month</span>
                                 <span>↗</span>
                             </div>
                         </div>
 
+                        <!-- Mini chart -->
                         <div class="chart-heading">
                             <span>Overview</span>
                             <span>This week⌄</span>
@@ -113,18 +145,53 @@
                             <div class="chart-grid-line"></div>
                             <div class="chart-grid-line"></div>
 
-                            <svg viewBox="0 0 250 90" preserveAspectRatio="none">
+                            <svg
+                                viewBox="0 0 250 90"
+                                preserveAspectRatio="none"
+                                aria-hidden="true"
+                            >
                                 <defs>
-                                    <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
-                                        <stop offset="0%" stop-color="#8b65f4" stop-opacity=".28"/>
-                                        <stop offset="100%" stop-color="#8b65f4" stop-opacity="0"/>
+                                    <linearGradient
+                                        id="chartFill"
+                                        x1="0"
+                                        y1="0"
+                                        x2="0"
+                                        y2="1"
+                                    >
+                                        <stop
+                                            offset="0%"
+                                            stop-color="#8b65f4"
+                                            stop-opacity=".28"
+                                        />
+                                        <stop
+                                            offset="100%"
+                                            stop-color="#8b65f4"
+                                            stop-opacity="0"
+                                        />
                                     </linearGradient>
                                 </defs>
-                                <path d="M0 72 C20 65, 27 40, 49 48 S78 63, 98 36 S133 53, 155 25 S191 44, 211 19 S233 28, 250 8 L250 90 L0 90 Z" fill="url(#chartFill)"/>
-                                <path d="M0 72 C20 65, 27 40, 49 48 S78 63, 98 36 S133 53, 155 25 S191 44, 211 19 S233 28, 250 8" fill="none" stroke="#8862ed" stroke-width="3" stroke-linecap="round"/>
+
+                                <path
+                                    d="M0 72 C20 65, 27 40, 49 48
+                                    S78 63, 98 36 S133 53, 155 25
+                                    S191 44, 211 19 S233 28, 250 8
+                                    L250 90 L0 90 Z"
+                                    fill="url(#chartFill)"
+                                />
+
+                                <path
+                                    d="M0 72 C20 65, 27 40, 49 48
+                                    S78 63, 98 36 S133 53, 155 25
+                                    S191 44, 211 19 S233 28, 250 8"
+                                    fill="none"
+                                    stroke="#8862ed"
+                                    stroke-width="3"
+                                    stroke-linecap="round"
+                                />
                             </svg>
                         </div>
 
+                        <!-- Recent transactions -->
                         <div class="transaction-heading">
                             <strong>Recent activity</strong>
                             <span>See all</span>
@@ -132,31 +199,41 @@
 
                         <div class="transaction-row">
                             <div class="transaction-icon income-icon">↙</div>
+
                             <div class="transaction-info">
                                 <strong>Client payment</strong>
                                 <span>Today, 10:24 AM</span>
                             </div>
+
                             <strong class="amount-positive">+$820</strong>
                         </div>
 
                         <div class="transaction-row">
                             <div class="transaction-icon expense-icon">↗</div>
+
                             <div class="transaction-info">
                                 <strong>Subscription</strong>
                                 <span>Yesterday</span>
                             </div>
+
                             <strong class="amount-negative">-$45</strong>
                         </div>
+
                     </div>
                 </div>
 
+
+                <!-- Floating history card -->
                 <div class="floating-card history-card">
+
                     <div class="floating-card-heading">
                         <span class="small-icon">◷</span>
+
                         <div>
                             <strong>History</strong>
                             <span>Recent transactions</span>
                         </div>
+
                         <span class="more-icon">•••</span>
                     </div>
 
@@ -168,26 +245,34 @@
 
                     <div class="history-entry">
                         <span class="bank-icon">↗</span>
+
                         <div class="history-info">
                             <strong>North Finance</strong>
                             <small>August 12, 2026</small>
                         </div>
+
                         <strong class="positive-number">+$200</strong>
                     </div>
 
                     <div class="history-entry">
                         <span class="bank-icon">↗</span>
+
                         <div class="history-info">
                             <strong>North Finance</strong>
                             <small>August 11, 2026</small>
                         </div>
+
                         <strong class="negative-number">-$400</strong>
                     </div>
                 </div>
 
+
+                <!-- Floating income card -->
                 <div class="floating-card income-card">
+
                     <div class="income-heading">
                         <span class="small-icon">$</span>
+
                         <div>
                             <strong>Income</strong>
                             <span>Monthly overview</span>
@@ -207,89 +292,273 @@
                         <span>Monthly goal</span>
                         <strong>80%</strong>
                     </div>
+
                 </div>
 
+
+                <!-- Decorative brand tag -->
                 <div class="phone-brand-tag">
                     <span class="mini-brand-icon">✦</span>
                     Nicepay
                 </div>
+
             </div>
         </section>
 
-        <!-- TRUSTED COMPANIES -->
+
+        <!-- =========================
+             TRUSTED COMPANIES
+        ========================== -->
         <section class="trusted-section" aria-label="Trusted companies">
-            <p class="trusted-title">Trusted by 2k+ companies</p>
+
+            <p class="trusted-title">
+                Trusted by 2k+ companies
+            </p>
+
+            <!-- Company logos are text-based placeholders -->
             <div class="company-logos">
-                <div class="company-logo logo-muted"><span class="logo-symbol">✧</span> <strong>Logoipsum</strong></div>
-                <div class="company-logo"><span class="logo-symbol logo-circle">↗</span> <strong>Logoipsum</strong></div>
-                <div class="company-logo"><span class="logo-symbol logo-flower">✿</span> <strong>Logoipsum</strong></div>
-                <div class="company-logo"><span class="logo-symbol logo-stripes">≋</span> <strong>Logoipsum</strong></div>
-                <div class="company-logo logo-muted logo-last"><span class="logo-symbol">◉</span> <strong>Logoipsum</strong></div>
+
+                <div class="company-logo logo-muted">
+                    <span class="logo-symbol">✧</span>
+                    <strong>Logoipsum</strong>
+                </div>
+
+                <div class="company-logo">
+                    <span class="logo-symbol logo-circle">↗</span>
+                    <strong>Logoipsum</strong>
+                </div>
+
+                <div class="company-logo">
+                    <span class="logo-symbol logo-flower">✿</span>
+                    <strong>Logoipsum</strong>
+                </div>
+
+                <div class="company-logo">
+                    <span class="logo-symbol logo-stripes">≋</span>
+                    <strong>Logoipsum</strong>
+                </div>
+
+                <div class="company-logo logo-muted logo-last">
+                    <span class="logo-symbol">◉</span>
+                    <strong>Logoipsum</strong>
+                </div>
+
             </div>
         </section>
 
-        <!-- WORKFLOW / FEATURES -->
-        <section class="workflow-section" id="features" aria-labelledby="workflow-title">
+
+        <!-- =========================
+             WORKFLOW / FEATURES
+        ========================== -->
+        <section
+            class="workflow-section"
+            id="features"
+            aria-labelledby="workflow-title"
+        >
+
+            <!-- Section label -->
             <div class="eyebrow workflow-eyebrow">
                 <span class="eyebrow-dot"></span>
                 Our workflow
             </div>
 
+            <!-- Section headline -->
             <h2 id="workflow-title">
-                How our platform makes your <br> workflow <span>easier</span>
+                How our platform makes your
+                <br>
+                workflow <span>easier</span>
             </h2>
 
+            <!-- Workflow cards -->
             <div class="workflow-grid">
+
+                <!-- Card 1: Account creation -->
                 <article class="workflow-card">
+
                     <div class="feature-icon">♙</div>
+
                     <h3>Sign up and customize</h3>
+
                     <p class="feature-description">
-                        Create your account in minutes and tailor the platform to meet your company's unique financial needs.
+                        Create your account in minutes and tailor the platform
+                        to meet your company's unique financial needs.
                     </p>
+
+                    <!-- User statistics illustration -->
                     <div class="dashboard-widget users-widget">
+
                         <div class="widget-heading">
                             <span class="widget-icon">♙</span>
                             <strong>Total Users</strong>
                         </div>
+
                         <div class="users-number">
                             <strong>20K+</strong>
+                            <div class="avatar-stack" aria-label="Example user avatars">
+                                <span>A</span>
+                                <span>M</span>
+                                <span>J</span>
+                                <span>L</span>
+                            </div>
                         </div>
+
+                        <span class="widget-subtitle">Users</span>
+
+                        <!-- Monthly users -->
+                        <div class="stat-row">
+                            <div class="stat-label">
+                                <span>Monthly Users</span>
+                                <strong>1K+</strong>
+                            </div>
+
+                            <div class="stat-progress">
+                                <span style="width: 70%;"></span>
+                            </div>
+                        </div>
+
+                        <!-- Yearly users -->
+                        <div class="stat-row">
+                            <div class="stat-label">
+                                <span>Yearly Users</span>
+                                <strong>10K+</strong>
+                            </div>
+
+                            <div class="stat-progress">
+                                <span style="width: 85%;"></span>
+                            </div>
+                        </div>
+
                     </div>
                 </article>
 
+
+                <!-- Card 2: Account linking -->
                 <article class="workflow-card">
+
                     <div class="feature-icon">▣</div>
+
                     <h3>Link Your Accounts</h3>
+
                     <p class="feature-description">
-                        Easily link your bank accounts, credit cards, loans, and investment accounts in one place.
+                        Easily link your bank accounts, credit cards, loans,
+                        and investment accounts in one place.
                     </p>
+
+                    <!-- Connected accounts illustration -->
                     <div class="dashboard-widget accounts-widget">
+
+                        <div class="account-network">
+
+                            <!-- Left-side accounts -->
+                            <div class="account-column">
+                                <span class="account-node">₿</span>
+                                <span class="account-node">◈</span>
+                                <span class="account-node">▤</span>
+                            </div>
+
+                            <!-- Connection lines -->
+                            <div class="network-lines" aria-hidden="true">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <!-- Central Nicepay icon -->
+                            <div class="central-account-icon">
+                                <svg viewBox="0 0 40 40" fill="none"
+                                    aria-hidden="true">
+                                    <rect x="4" y="4" width="14" height="14"
+                                        rx="5" fill="currentColor"/>
+                                    <rect x="22" y="4" width="14" height="14"
+                                        rx="5" fill="currentColor"/>
+                                    <rect x="4" y="22" width="14" height="14"
+                                        rx="5" fill="currentColor"/>
+                                    <rect x="22" y="22" width="14" height="14"
+                                        rx="5" fill="currentColor"/>
+                                </svg>
+                            </div>
+
+                            <!-- Right-side accounts -->
+                            <div class="network-lines network-lines-right"
+                                aria-hidden="true">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="account-column">
+                                <span class="account-node">◉</span>
+                                <span class="account-node">▦</span>
+                                <span class="account-node">↗</span>
+                            </div>
+
+                        </div>
+
                         <div class="integration-info">
                             <span>Integrate with platforms over</span>
                             <strong>20+</strong>
+                            <small>Connected services</small>
                         </div>
+
                     </div>
                 </article>
+
             </div>
         </section>
 
-        <!-- PRICING SECTION -->
+
+        <!-- =========================
+             PRICING SECTION
+        ========================== -->
         <section class="extra-section" id="pricing">
             <div class="eyebrow">
                 <span class="eyebrow-dot"></span>
                 Simple and flexible
             </div>
+
             <h2>Start managing your money smarter.</h2>
-            <a href="#contact" class="btn btn-primary">Get Started Free</a>
+
+            <p>
+                Get the tools you need to understand your finances, monitor
+                activity, and keep everything organized in one place.
+            </p>
+
+            <a href="#contact" class="btn btn-primary">
+                Get Started Free
+            </a>
         </section>
 
-        <!-- FOOTER / CONTACT -->
+
+        <!-- =========================
+             FOOTER / CONTACT
+        ========================== -->
         <footer class="site-footer" id="contact">
+
             <a href="#home" class="brand footer-brand">
+                <span class="brand-icon" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" fill="none">
+                        <rect x="3" y="3" width="14" height="14"
+                            rx="5" fill="currentColor"/>
+                        <rect x="23" y="3" width="14" height="14"
+                            rx="5" fill="currentColor"/>
+                        <rect x="3" y="23" width="14" height="14"
+                            rx="5" fill="currentColor"/>
+                        <rect x="23" y="23" width="14" height="14"
+                            rx="5" fill="currentColor"/>
+                    </svg>
+                </span>
+
                 <span>Nicepay</span>
             </a>
-            <p>Simplifying your financial journey.</p>
-            <span class="copyright">&copy; 2026 Nicepay. All rights reserved.</span>
+
+            <p>
+                Simplifying your financial journey.
+            </p>
+
+            <span class="copyright">
+                &copy; 2026 Nicepay. All rights reserved.
+            </span>
+
         </footer>
 
     </main>
